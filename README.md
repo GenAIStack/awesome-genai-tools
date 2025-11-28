@@ -14,8 +14,12 @@ This list focuses on production-ready tools for **Image Generation**, **Video Cr
 - [✨ Featured / Editor's Choice](#-featured--editors-choice)
 - [🎨 Image Generation](#-image-generation)
 - [🎥 Video Generation](#-video-generation)
+- [🎵 Audio & Music Generation](#-audio--music-generation)
+- [YW 3D Generation](#-3d-generation)
 - [🤖 Text & LLMs](#-text--llms)
-- [🛠️ Utilities & Plugins](#-utilities--plugins)
+- [� Coding & Development](#-coding--development)
+- [�🛠️ Utilities & Plugins](#-utilities--plugins)
+- [📚 Learning Resources](#-learning-resources)
 
 ---
 
@@ -29,7 +33,7 @@ This list focuses on production-ready tools for **Image Generation**, **Video Cr
 A unified web platform that integrates multiple top-tier models. Unlike standard generators, it features a **Physics-Aware engine** for realistic lighting/gravity and supports conversational editing ("Edit with Gemini").
 * **Best for:** Professional designers requiring high consistency and text rendering.
 * **Key Feature:** Native 2K resolution with 4K upscaling.
-* [Visit Website](https://nanobanana-pro.co/)
+* [Try Nano Banana Pro AI](https://nanobanana-pro.co/)
 
 ---
 
@@ -41,6 +45,8 @@ A unified web platform that integrates multiple top-tier models. Unlike standard
 * **[Nano Banana Pro](https://nanobanana-pro.co/)** - (See Featured) Best for physics-accurate generation and localized text.
 * **[Adobe Firefly](https://firefly.adobe.com/)** - Safe for commercial use, integrated into Photoshop.
 * **[Ideogram](https://ideogram.ai/)** - Specialized in generating coherent text within images.
+* **[Leonardo.ai](https://leonardo.ai/)** - Production-quality visual assets with fine-tuned models.
+* **[Civitai](https://civitai.com/)** - The largest community for sharing Stable Diffusion models and LoRAs.
 
 ### Open Source / Local
 * **[Stable Diffusion WebUI (Automatic1111)](https://github.com/AUTOMATIC1111/stable-diffusion-webui)** - The classic interface for running SD models locally.
@@ -56,6 +62,29 @@ A unified web platform that integrates multiple top-tier models. Unlike standard
 * **[Sora](https://openai.com/sora)** - OpenAI's physics-simulating video model (Waitlist).
 * **[Luma Dream Machine](https://lumalabs.ai/)** - High-quality, fast video generation.
 * **[Kling AI](https://kling.kuaishou.com/)** - Capable of generating longer video sequences (up to 2 mins).
+* **[Vora Video](https://voravideo.com/)** - AI video generation platform.
+* **[HeyGen](https://www.heygen.com/)** - AI video generation with realistic avatars.
+* **[Synthesia](https://www.synthesia.io/)** - Create professional AI avatar videos from text.
+* **[D-ID](https://www.d-id.com/)** - Animate faces and create talking avatars from images.
+
+---
+
+## 🎵 Audio & Music Generation
+
+* **[Music Generator AI](https://musicgeneratorai.io/)** - AI music generation tool.
+* **[Stable Audio](https://stableaudio.net/)** - Stability AI's audio generation model.
+* **[Suno](https://suno.com/)** - Create full songs with vocals and lyrics.
+* **[ElevenLabs](https://elevenlabs.io/)** - The most realistic AI voice generator.
+* **[Udio](https://www.udio.com/)** - High-fidelity music generation with complex musicality.
+* **[OpenAI Whisper](https://openai.com/index/whisper/)** - Robust speech recognition and transcription model.
+
+---
+
+## YW 3D Generation
+
+* **[Meshy](https://www.meshy.ai/)** - Fast 3D model generation from text or image.
+* **[Tripo](https://www.tripo3d.ai/)** - Generate high-quality 3D models in seconds.
+* **[Luma AI](https://lumalabs.ai/)** - Capture 3D scenes and generate 3D assets.
 
 ---
 
@@ -65,6 +94,17 @@ A unified web platform that integrates multiple top-tier models. Unlike standard
 * **[Claude 3.5 (Anthropic)](https://www.anthropic.com/)** - Known for natural writing and large context windows.
 * **[Gemini (Google)](https://gemini.google.com/)** - Google's multimodal AI model.
 * **[Perplexity](https://www.perplexity.ai/)** - AI-powered search engine.
+* **[Mistral](https://mistral.ai/)** - High-performance open-source models.
+* **[DeepSeek](https://www.deepseek.com/)** - Advanced coding and reasoning models.
+
+---
+
+## 💻 Coding & Development
+
+* **[GitHub Copilot](https://github.com/features/copilot)** - The most widely used AI pair programmer.
+* **[Cursor](https://www.cursor.so/)** - An AI-native code editor designed for pair-programming.
+* **[Replit Ghostwriter](https://replit.com/site/ghostwriter)** - AI coding assistant integrated into the Replit IDE.
+* **[LangChain](https://langchain.com/)** - Framework for developing applications powered by language models.
 
 ---
 
@@ -73,6 +113,14 @@ A unified web platform that integrates multiple top-tier models. Unlike standard
 * **[Upscayl](https://github.com/upscayl/upscayl)** - Free and open source AI image upscaler.
 * **[Magnific AI](https://magnific.ai/)** - High-end upscaler and detail enhancer (Paid).
 * **[ControlNet](https://github.com/lllyasviel/ControlNet)** - Neural network structure to control diffusion models.
+
+---
+
+## 📚 Learning Resources
+
+* **[Prompt Engineering Guide](https://www.promptingguide.ai/)** - Comprehensive guide to prompt engineering.
+* **[OpenAI Cookbook](https://github.com/openai/openai-cookbook)** - Examples and guides for using the OpenAI API.
+* **[Learn Prompting](https://learnprompting.org/)** - A free, open source course on communicating with AI.
 
 ---
 
