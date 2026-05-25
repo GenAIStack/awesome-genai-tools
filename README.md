@@ -46,6 +46,7 @@ A unified web platform that integrates multiple top-tier models. Unlike standard
 * **[Adobe Firefly](https://firefly.adobe.com/)** - Safe for commercial use, integrated into Photoshop.
 * **[Ideogram](https://ideogram.ai/)** - Specialized in generating coherent text within images.
 * **[Leonardo.ai](https://leonardo.ai/)** - Production-quality visual assets with fine-tuned models.
+* **[LandscapioAI](https://www.landscapioai.com/)** - AI landscape design generator for yard transformations, cost estimates, planting guides, and contractor-ready briefs.
 * **[Civitai](https://civitai.com/)** - The largest community for sharing Stable Diffusion models and LoRAs.
 
 ### Open Source / Local
