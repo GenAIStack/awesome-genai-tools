@@ -113,6 +113,7 @@ A unified web platform that integrates multiple top-tier models. Unlike standard
 * **[Upscayl](https://github.com/upscayl/upscayl)** - Free and open source AI image upscaler.
 * **[Magnific AI](https://magnific.ai/)** - High-end upscaler and detail enhancer (Paid).
 * **[ControlNet](https://github.com/lllyasviel/ControlNet)** - Neural network structure to control diffusion models.
+* **[PhotoRestore.ai](https://photorestore.ai)** - AI-powered restoration of old and damaged photos — repairs scratches, fading, and colorizes B&W images. Free trial.
 
 ---
 
