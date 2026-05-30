@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://genaistack.github.io/awesome-genai-tools/sitemap.xml

@@ -6,6 +6,8 @@
 A curated directory of official generative AI tools for image generation, video generation, audio, 3D, LLMs, coding, and creative production workflows.
 The list focuses on practical, production-ready tools with direct links to their official websites or GitHub repositories.
 
+Web version: [Awesome Generative AI Tools](https://genaistack.github.io/awesome-genai-tools/)
+
 > **Note:** This list is maintained by the community. Tools are categorized by their primary function.
 
 ## What This List Covers
