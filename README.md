@@ -43,6 +43,11 @@ A unified web platform that integrates multiple top-tier models. Unlike standard
 * **[Midjourney](https://www.midjourney.com/)** - The industry standard for artistic style and texture. Runs on Discord.
 * **[DALL·E 3](https://openai.com/dall-e-3)** - OpenAI's model, excellent at following complex prompt instructions.
 * **[Nano Banana Pro](https://nanobanana-pro.co/)** - (See Featured) Best for physics-accurate generation and localized text.
+* **[Image V2](https://imagev2.org/)** - Browser-based AI image generation and editing platform with multiple model workflows.
+* **[Krea](https://www.krea.ai/)** - Creative AI suite for image generation, enhancement, video, and 3D workflows.
+* **[Recraft](https://www.recraft.ai/)** - AI design tool for brand assets, illustrations, vector-style graphics, and image editing.
+* **[Freepik AI Suite](https://www.freepik.com/ai)** - Multi-model creative suite for AI image generation, editing, upscaling, and design assets.
+* **[FLUX by Black Forest Labs](https://bfl.ai/)** - Frontier image generation models and tools from Black Forest Labs.
 * **[Adobe Firefly](https://firefly.adobe.com/)** - Safe for commercial use, integrated into Photoshop.
 * **[Ideogram](https://ideogram.ai/)** - Specialized in generating coherent text within images.
 * **[Leonardo.ai](https://leonardo.ai/)** - Production-quality visual assets with fine-tuned models.
@@ -57,11 +62,16 @@ A unified web platform that integrates multiple top-tier models. Unlike standard
 
 ## 🎥 Video Generation
 
-* **[Runway Gen-3](https://runwayml.com/)** - Leading text-to-video model with granular motion control.
+* **[Runway Gen-4](https://runwayml.com/)** - Leading text-to-video platform with granular motion control and production workflows.
 * **[Pika Art](https://pika.art/)** - Great for animating specific regions of an image.
 * **[Sora](https://openai.com/sora)** - OpenAI's physics-simulating video model (Waitlist).
+* **[Google Flow](https://labs.google/fx/tools/flow)** - Google's AI filmmaking tool built around Veo video generation workflows.
+* **[Adobe Firefly Video](https://firefly.adobe.com/)** - Adobe's generative video and creative editing surface inside Firefly.
+* **[Higgsfield](https://higgsfield.ai/)** - AI video and image platform focused on cinematic camera moves, presets, and social video workflows.
 * **[Luma Dream Machine](https://lumalabs.ai/)** - High-quality, fast video generation.
 * **[Kling AI](https://kling.kuaishou.com/)** - Capable of generating longer video sequences (up to 2 mins).
+* **[Hailuo AI](https://hailuoai.video/)** - MiniMax-backed AI video generator for text-to-video and image-to-video clips.
+* **[Sceneflare](https://sceneflare.com/)** - AI creative workspace for image generation, video generation, effects, and editing tools.
 * **[Vora Video](https://voravideo.com/)** - AI video generation platform.
 * **[HeyGen](https://www.heygen.com/)** - AI video generation with realistic avatars.
 * **[Synthesia](https://www.synthesia.io/)** - Create professional AI avatar videos from text.
