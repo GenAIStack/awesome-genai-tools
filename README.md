@@ -1,12 +1,20 @@
-# ♾️ Awesome Generative AI Tools Collection
+# Awesome Generative AI Tools
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d73059c/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-A curated collection of the most effective Artificial Intelligence tools and frameworks. 
-This list focuses on production-ready tools for **Image Generation**, **Video Creation**, and **LLMs**.
+A curated directory of official generative AI tools for image generation, video generation, audio, 3D, LLMs, coding, and creative production workflows.
+The list focuses on practical, production-ready tools with direct links to their official websites or GitHub repositories.
 
 > **Note:** This list is maintained by the community. Tools are categorized by their primary function.
+
+## What This List Covers
+
+* AI image generators and image editing tools
+* AI video generators and filmmaking tools
+* AI music, voice, and audio generation platforms
+* 3D generation tools for models and scenes
+* LLMs, coding assistants, and developer AI tools
 
 ---
 
@@ -15,10 +23,10 @@ This list focuses on production-ready tools for **Image Generation**, **Video Cr
 - [🎨 Image Generation](#-image-generation)
 - [🎥 Video Generation](#-video-generation)
 - [🎵 Audio & Music Generation](#-audio--music-generation)
-- [YW 3D Generation](#-3d-generation)
+- [3D Generation](#-3d-generation)
 - [🤖 Text & LLMs](#-text--llms)
-- [� Coding & Development](#-coding--development)
-- [�🛠️ Utilities & Plugins](#-utilities--plugins)
+- [💻 Coding & Development](#-coding--development)
+- [🛠️ Utilities & Plugins](#-utilities--plugins)
 - [📚 Learning Resources](#-learning-resources)
 
 ---
@@ -90,7 +98,7 @@ A unified web platform that integrates multiple top-tier models. Unlike standard
 
 ---
 
-## YW 3D Generation
+## 3D Generation
 
 * **[Meshy](https://www.meshy.ai/)** - Fast 3D model generation from text or image.
 * **[Tripo](https://www.tripo3d.ai/)** - Generate high-quality 3D models in seconds.
