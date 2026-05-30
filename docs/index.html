@@ -4,35 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Awesome Generative AI Tools | Official AI Tools Directory</title>
-    <meta name="description" content="A curated directory of official generative AI tools for image generation, video generation, audio, 3D, LLMs, coding, and creative workflows.">
+    <meta name="description" content="A professional directory of official generative AI tools for image generation, video generation, audio, music, 3D, LLMs, coding, and creative workflows.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="GenAIStack">
     <link rel="canonical" href="https://genaistack.github.io/awesome-genai-tools/">
     <meta property="og:title" content="Awesome Generative AI Tools">
-    <meta property="og:description" content="Official links to practical AI tools for image, video, audio, 3D, LLMs, coding, and creative production workflows.">
+    <meta property="og:description" content="A curated catalog of official AI tools for image, video, audio, 3D, LLMs, coding, and creative production workflows.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://genaistack.github.io/awesome-genai-tools/">
     <meta name="twitter:card" content="summary">
     <style>
       :root {
         color-scheme: light;
-        --ink: #181714;
-        --muted: #69645b;
+        --ink: #171614;
+        --muted: #676057;
+        --quiet: #8a8276;
         --paper: #f8f5ee;
-        --panel: #fffdfa;
-        --line: #ded7c8;
-        --accent: #0f766e;
-        --accent-ink: #064e3b;
-        --warm: #b45309;
+        --panel: #fffdf8;
+        --panel-strong: #f1eadf;
+        --line: #ddd2c1;
+        --line-strong: #b9ab96;
+        --green: #0f766e;
+        --green-dark: #064e3b;
+        --rust: #a24712;
+        --blue: #1d4f91;
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
         background:
-          linear-gradient(90deg, rgba(24, 23, 20, 0.04) 1px, transparent 1px),
-          linear-gradient(180deg, rgba(24, 23, 20, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(23, 22, 20, 0.04) 1px, transparent 1px),
+          linear-gradient(180deg, rgba(23, 22, 20, 0.035) 1px, transparent 1px),
           var(--paper);
         background-size: 44px 44px;
         color: var(--ink);
@@ -40,38 +50,90 @@
         line-height: 1.55;
       }
 
-      main {
-        width: min(1120px, calc(100% - 32px));
+      a {
+        color: var(--green-dark);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      a:hover {
+        color: var(--rust);
+      }
+
+      .site {
+        width: min(1180px, calc(100% - 32px));
         margin: 0 auto;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid var(--line);
+        background: rgba(248, 245, 238, 0.94);
+        backdrop-filter: blur(10px);
+      }
+
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: min(1180px, calc(100% - 32px));
+        min-height: 58px;
+        margin: 0 auto;
+      }
+
+      .brand {
+        color: var(--ink);
+        font: 800 14px/1 ui-sans-serif, system-ui, sans-serif;
+        text-decoration: none;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 14px;
+        font: 700 13px/1 ui-sans-serif, system-ui, sans-serif;
+      }
+
+      .nav a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .nav a:hover {
+        color: var(--green-dark);
       }
 
       .hero {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 300px;
-        gap: clamp(32px, 6vw, 96px);
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+        gap: clamp(36px, 7vw, 96px);
         align-items: end;
-        min-height: 72vh;
-        padding: clamp(56px, 9vw, 120px) 0 48px;
+        padding: clamp(64px, 9vw, 128px) 0 54px;
         border-bottom: 1px solid var(--line);
       }
 
-      .eyebrow {
-        color: var(--accent-ink);
-        font: 700 13px/1.2 ui-sans-serif, system-ui, sans-serif;
+      .eyebrow,
+      .label {
+        color: var(--green-dark);
+        font: 800 12px/1.2 ui-sans-serif, system-ui, sans-serif;
         letter-spacing: 0;
         text-transform: uppercase;
       }
 
       h1 {
-        max-width: 820px;
-        margin: 18px 0 22px;
-        font-size: clamp(48px, 8vw, 112px);
-        line-height: 0.92;
+        max-width: 900px;
+        margin: 18px 0 24px;
+        font-size: clamp(46px, 8vw, 108px);
+        line-height: 0.93;
         letter-spacing: 0;
       }
 
       .lead {
-        max-width: 680px;
+        max-width: 720px;
         margin: 0;
         color: var(--muted);
         font-size: clamp(19px, 2vw, 24px);
@@ -84,21 +146,16 @@
         margin-top: 34px;
       }
 
-      a {
-        color: var(--accent-ink);
-        text-decoration-thickness: 1px;
-        text-underline-offset: 3px;
-      }
-
       .button {
         display: inline-flex;
         align-items: center;
-        min-height: 42px;
-        padding: 10px 16px;
+        justify-content: center;
+        min-height: 44px;
+        padding: 11px 16px;
         border: 1px solid var(--ink);
         background: var(--ink);
         color: var(--panel);
-        font: 700 14px/1 ui-sans-serif, system-ui, sans-serif;
+        font: 800 14px/1 ui-sans-serif, system-ui, sans-serif;
         text-decoration: none;
       }
 
@@ -107,54 +164,242 @@
         color: var(--ink);
       }
 
-      .stamp {
+      .brief {
         border: 1px solid var(--ink);
         background: var(--panel);
+        box-shadow: 10px 10px 0 rgba(15, 118, 110, 0.14);
+      }
+
+      .brief-head {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-bottom: 1px solid var(--ink);
+      }
+
+      .metric {
+        min-height: 118px;
         padding: 18px;
-        font: 700 15px/1.35 ui-sans-serif, system-ui, sans-serif;
-        transform: rotate(-2deg);
-        box-shadow: 8px 8px 0 rgba(15, 118, 110, 0.18);
+        border-right: 1px solid var(--ink);
       }
 
-      .stamp strong {
+      .metric:last-child {
+        border-right: 0;
+      }
+
+      .metric strong {
         display: block;
-        color: var(--warm);
-        font-size: 44px;
-        line-height: 1;
+        color: var(--rust);
+        font: 900 42px/1 ui-sans-serif, system-ui, sans-serif;
       }
 
-      section {
-        padding: 56px 0;
+      .metric span,
+      .brief-body {
+        color: var(--muted);
+        font: 700 14px/1.35 ui-sans-serif, system-ui, sans-serif;
+      }
+
+      .brief-body {
+        padding: 18px;
+      }
+
+      .brief-body ul {
+        margin: 12px 0 0;
+        padding-left: 18px;
+      }
+
+      .section {
+        padding: 58px 0;
         border-bottom: 1px solid var(--line);
       }
 
+      .section-heading {
+        display: grid;
+        grid-template-columns: minmax(0, 0.72fr) minmax(260px, 0.28fr);
+        gap: 28px;
+        align-items: end;
+        margin-bottom: 28px;
+      }
+
       h2 {
-        margin: 0 0 22px;
+        margin: 8px 0 0;
+        font-size: clamp(30px, 4.4vw, 54px);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .section-heading p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .category-link {
+        min-height: 112px;
+        padding: 16px;
+        border: 1px solid var(--line);
+        background: rgba(255, 253, 248, 0.74);
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .category-link strong {
+        display: block;
+        margin-bottom: 8px;
+        font: 900 18px/1.15 ui-sans-serif, system-ui, sans-serif;
+      }
+
+      .category-link span {
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .catalog {
+        display: grid;
+        gap: 34px;
+      }
+
+      .category {
+        display: grid;
+        grid-template-columns: 260px minmax(0, 1fr);
+        gap: 24px;
+        padding-top: 34px;
+        border-top: 1px solid var(--line-strong);
+      }
+
+      .category:first-child {
+        padding-top: 0;
+        border-top: 0;
+      }
+
+      .category-title {
+        position: sticky;
+        top: 78px;
+        align-self: start;
+      }
+
+      .category-title h3 {
+        margin: 8px 0 10px;
+        font-size: 28px;
+        line-height: 1.04;
+        letter-spacing: 0;
+      }
+
+      .category-title p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .tool-list {
+        display: grid;
+        border-top: 1px solid var(--line);
+      }
+
+      .tool {
+        display: grid;
+        grid-template-columns: minmax(180px, 0.32fr) minmax(0, 0.68fr);
+        gap: 20px;
+        padding: 18px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .tool-name {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 8px;
+        min-width: 0;
+      }
+
+      .tool-name a {
+        color: var(--ink);
+        font: 900 18px/1.2 ui-sans-serif, system-ui, sans-serif;
+        text-decoration: none;
+      }
+
+      .tool-name a:hover {
+        color: var(--green-dark);
+        text-decoration: underline;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        min-height: 22px;
+        padding: 3px 7px;
+        border: 1px solid var(--line-strong);
+        color: var(--muted);
+        font: 800 11px/1 ui-sans-serif, system-ui, sans-serif;
+        text-transform: uppercase;
+      }
+
+      .tool p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .featured {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 20px;
+      }
+
+      .feature-panel {
+        padding: 24px;
+        border: 1px solid var(--ink);
+        background: var(--panel);
+      }
+
+      .feature-panel h3 {
+        margin: 10px 0 10px;
         font-size: clamp(28px, 4vw, 48px);
         line-height: 1;
         letter-spacing: 0;
       }
 
-      .grid {
+      .feature-panel p {
+        color: var(--muted);
+      }
+
+      .feature-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .feature-list .tool {
+        display: block;
+        min-height: 0;
+        padding: 16px;
+        border: 1px solid var(--line);
+        background: rgba(255, 253, 248, 0.78);
+      }
+
+      .feature-list p {
+        margin-top: 6px;
+      }
+
+      .maintenance {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 18px;
+        gap: 16px;
       }
 
-      .tool {
-        min-height: 156px;
+      .note {
         padding: 18px;
         border: 1px solid var(--line);
-        background: rgba(255, 253, 250, 0.72);
+        background: rgba(255, 253, 248, 0.78);
       }
 
-      .tool h3 {
+      .note h3 {
         margin: 0 0 8px;
-        font: 800 18px/1.2 ui-sans-serif, system-ui, sans-serif;
-        letter-spacing: 0;
+        font: 900 18px/1.2 ui-sans-serif, system-ui, sans-serif;
       }
 
-      .tool p {
+      .note p {
         margin: 0;
         color: var(--muted);
       }
@@ -168,27 +413,62 @@
         font: 14px/1.5 ui-sans-serif, system-ui, sans-serif;
       }
 
-      @media (max-width: 760px) {
-        main {
-          width: min(100% - 24px, 1120px);
+      @media (max-width: 920px) {
+        .hero,
+        .section-heading,
+        .featured,
+        .category {
+          grid-template-columns: 1fr;
+        }
+
+        .category-title {
+          position: static;
+        }
+
+        .category-grid,
+        .maintenance {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 640px) {
+        .site,
+        .topbar-inner {
+          width: min(100% - 24px, 1180px);
+        }
+
+        .topbar {
+          position: static;
+        }
+
+        .topbar-inner {
+          display: block;
+          padding: 14px 0;
+        }
+
+        .nav {
+          justify-content: flex-start;
+          margin-top: 12px;
         }
 
         .hero {
-          grid-template-columns: 1fr;
-          min-height: auto;
-          padding-top: 48px;
+          padding-top: 44px;
         }
 
-        .stamp {
-          max-width: 280px;
-        }
-
-        .grid {
+        .brief-head,
+        .category-grid,
+        .maintenance,
+        .tool {
           grid-template-columns: 1fr;
         }
 
-        footer {
-          display: block;
+        .metric {
+          border-right: 0;
+          border-bottom: 1px solid var(--ink);
+        }
+
+        .metric:last-child {
+          border-bottom: 0;
         }
       }
     </style>
@@ -197,8 +477,9 @@
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "name": "Awesome Generative AI Tools",
-        "description": "A curated directory of official generative AI tools for image generation, video generation, audio, 3D, LLMs, coding, and creative workflows.",
+        "description": "A professional directory of official generative AI tools for image generation, video generation, audio, 3D, LLMs, coding, and creative workflows.",
         "url": "https://genaistack.github.io/awesome-genai-tools/",
+        "dateModified": "2026-05-30",
         "isPartOf": {
           "@type": "WebSite",
           "name": "GenAIStack",
@@ -207,73 +488,292 @@
         "mainEntity": {
           "@type": "ItemList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Image V2", "url": "https://imagev2.org/" },
-            { "@type": "ListItem", "position": 2, "name": "Sceneflare", "url": "https://sceneflare.com/" },
-            { "@type": "ListItem", "position": 3, "name": "Krea", "url": "https://www.krea.ai/" },
-            { "@type": "ListItem", "position": 4, "name": "Recraft", "url": "https://www.recraft.ai/" },
-            { "@type": "ListItem", "position": 5, "name": "Runway", "url": "https://runwayml.com/" },
-            { "@type": "ListItem", "position": 6, "name": "Google Flow", "url": "https://labs.google/fx/tools/flow" }
+            { "@type": "ListItem", "position": 1, "name": "Nano Banana Pro", "url": "https://nanobanana-pro.co/" },
+            { "@type": "ListItem", "position": 2, "name": "Image V2", "url": "https://imagev2.org/" },
+            { "@type": "ListItem", "position": 3, "name": "Sceneflare", "url": "https://sceneflare.com/" },
+            { "@type": "ListItem", "position": 4, "name": "Krea", "url": "https://www.krea.ai/" },
+            { "@type": "ListItem", "position": 5, "name": "Recraft", "url": "https://www.recraft.ai/" },
+            { "@type": "ListItem", "position": 6, "name": "Runway Gen-4", "url": "https://runwayml.com/" },
+            { "@type": "ListItem", "position": 7, "name": "Google Flow", "url": "https://labs.google/fx/tools/flow" },
+            { "@type": "ListItem", "position": 8, "name": "ChatGPT", "url": "https://chat.openai.com/" }
           ]
         }
       }
     </script>
   </head>
   <body>
-    <main>
-      <header class="hero">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top">GenAIStack Directory</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#categories">Categories</a>
+          <a href="#featured">Featured</a>
+          <a href="#catalog">Catalog</a>
+          <a href="#maintenance">Maintained List</a>
+          <a href="https://github.com/GenAIStack/awesome-genai-tools">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="site">
+      <section class="hero" aria-labelledby="hero-title">
         <div>
-          <p class="eyebrow">GenAIStack directory</p>
-          <h1>Awesome Generative AI Tools</h1>
-          <p class="lead">A curated directory of official AI tools for image generation, video generation, audio, 3D, LLMs, coding, and creative production workflows.</p>
+          <p class="eyebrow">Official AI tools directory</p>
+          <h1 id="hero-title">Awesome Generative AI Tools</h1>
+          <p class="lead">A curated catalog of practical generative AI tools for image generation, video creation, audio, 3D, LLMs, coding, and creative production workflows.</p>
           <div class="actions">
-            <a class="button" href="https://github.com/GenAIStack/awesome-genai-tools">View on GitHub</a>
-            <a class="button secondary" href="https://github.com/GenAIStack/awesome-genai-tools#-image-generation">Browse the list</a>
+            <a class="button" href="https://github.com/GenAIStack/awesome-genai-tools">View source on GitHub</a>
+            <a class="button secondary" href="#catalog">Browse the catalog</a>
           </div>
         </div>
-        <aside class="stamp" aria-label="Directory summary">
-          <strong>40+</strong>
-          official AI tool links across creative and developer workflows.
+        <aside class="brief" aria-label="Directory summary">
+          <div class="brief-head">
+            <div class="metric">
+              <strong>50+</strong>
+              <span>official tool links</span>
+            </div>
+            <div class="metric">
+              <strong>8</strong>
+              <span>workflow categories</span>
+            </div>
+          </div>
+          <div class="brief-body">
+            Updated May 30, 2026. Built for makers, developers, marketers, designers, and researchers comparing AI tools by category.
+            <ul>
+              <li>Direct official links</li>
+              <li>Short practical descriptions</li>
+              <li>Open contribution workflow</li>
+            </ul>
+          </div>
         </aside>
-      </header>
+      </section>
 
-      <section aria-labelledby="categories">
-        <h2 id="categories">Covered Categories</h2>
-        <div class="grid">
-          <article class="tool">
-            <h3>Image Generation</h3>
-            <p>Official links for AI image generators, image editors, upscalers, and design tools.</p>
-          </article>
-          <article class="tool">
-            <h3>Video Generation</h3>
-            <p>AI filmmaking, text-to-video, image-to-video, avatar video, and motion tools.</p>
-          </article>
-          <article class="tool">
-            <h3>LLMs and Coding</h3>
-            <p>Language models, AI search tools, coding assistants, and developer frameworks.</p>
-          </article>
+      <section id="categories" class="section" aria-labelledby="categories-title">
+        <div class="section-heading">
+          <div>
+            <p class="label">Directory map</p>
+            <h2 id="categories-title">Browse by workflow</h2>
+          </div>
+          <p>Each category is organized around a real production task, from making images and videos to building with LLMs and improving assets.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-link" href="#image-generation"><strong>Image Generation</strong><span>Text-to-image, image editing, upscaling, and design assets.</span></a>
+          <a class="category-link" href="#video-generation"><strong>Video Generation</strong><span>Text-to-video, image-to-video, avatars, and AI filmmaking.</span></a>
+          <a class="category-link" href="#audio-generation"><strong>Audio and Music</strong><span>Music generation, voice synthesis, and transcription.</span></a>
+          <a class="category-link" href="#3d-generation"><strong>3D Generation</strong><span>Text-to-3D, image-to-3D, and scene capture tools.</span></a>
+          <a class="category-link" href="#llms"><strong>Text and LLMs</strong><span>Chat, search, reasoning, multimodal, and model platforms.</span></a>
+          <a class="category-link" href="#coding"><strong>Coding</strong><span>Developer copilots, IDEs, and LLM application frameworks.</span></a>
+          <a class="category-link" href="#utilities"><strong>Utilities</strong><span>Upscaling, control models, plugins, and enhancement tools.</span></a>
+          <a class="category-link" href="#learning"><strong>Learning</strong><span>Prompt engineering and API learning resources.</span></a>
         </div>
       </section>
 
-      <section aria-labelledby="featured">
-        <h2 id="featured">Selected Official Links</h2>
-        <div class="grid">
-          <article class="tool">
-            <h3><a href="https://imagev2.org/">Image V2</a></h3>
-            <p>Browser-based AI image generation and editing platform with multiple model workflows.</p>
+      <section id="featured" class="section" aria-labelledby="featured-title">
+        <div class="section-heading">
+          <div>
+            <p class="label">Featured workflows</p>
+            <h2 id="featured-title">Useful starting points</h2>
+          </div>
+          <p>These tools represent common entry points into image, video, and multimodal creative workflows.</p>
+        </div>
+        <div class="featured">
+          <article class="feature-panel">
+            <p class="label">Multi-model creative platform</p>
+            <h3><a href="https://nanobanana-pro.co/">Nano Banana Pro</a></h3>
+            <p>A web platform for AI image and design workflows, focused on physics-aware generation, text rendering, and conversational image editing.</p>
+            <div class="actions">
+              <a class="button secondary" href="https://nanobanana-pro.co/">Open official site</a>
+            </div>
           </article>
-          <article class="tool">
-            <h3><a href="https://sceneflare.com/">Sceneflare</a></h3>
-            <p>AI creative workspace for image generation, video generation, effects, and editing tools.</p>
+          <div class="feature-list">
+            <article class="tool">
+              <div class="tool-name"><a href="https://imagev2.org/">Image V2</a><span class="badge">Image</span></div>
+              <p>Browser-based AI image generation and editing platform with multiple model workflows.</p>
+            </article>
+            <article class="tool">
+              <div class="tool-name"><a href="https://sceneflare.com/">Sceneflare</a><span class="badge">Video</span></div>
+              <p>AI creative workspace for image generation, video generation, effects, and editing tools.</p>
+            </article>
+            <article class="tool">
+              <div class="tool-name"><a href="https://labs.google/fx/tools/flow">Google Flow</a><span class="badge">Film</span></div>
+              <p>Google's AI filmmaking tool built around Veo video generation workflows.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalog" class="section" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div>
+            <p class="label">Full catalog</p>
+            <h2 id="catalog-title">Official generative AI tools</h2>
+          </div>
+          <p>The list favors official websites and primary GitHub repositories so the links remain useful for research, comparison, and publishing references.</p>
+        </div>
+
+        <div class="catalog">
+          <section id="image-generation" class="category" aria-labelledby="image-generation-title">
+            <div class="category-title">
+              <p class="label">Category 01</p>
+              <h3 id="image-generation-title">Image Generation</h3>
+              <p>AI image generators, design platforms, editing tools, open-source local workflows, and model hubs.</p>
+            </div>
+            <div class="tool-list">
+              <article class="tool"><div class="tool-name"><a href="https://www.midjourney.com/">Midjourney</a><span class="badge">Web</span></div><p>Industry-standard artistic image generation with strong style, texture, and composition control.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://openai.com/dall-e-3">DALL-E 3</a><span class="badge">Web</span></div><p>OpenAI image generation model known for following complex prompt instructions.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://nanobanana-pro.co/">Nano Banana Pro</a><span class="badge">Web</span></div><p>Multi-model image and design platform for physics-aware generation, text rendering, and editing.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://imagev2.org/">Image V2</a><span class="badge">Web</span></div><p>Browser-based AI image generation and editing platform with multiple model workflows.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.krea.ai/">Krea</a><span class="badge">Web</span></div><p>Creative AI suite for image generation, enhancement, video, and 3D workflows.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.recraft.ai/">Recraft</a><span class="badge">Design</span></div><p>AI design tool for brand assets, illustrations, vector-style graphics, and image editing.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.freepik.com/ai">Freepik AI Suite</a><span class="badge">Design</span></div><p>Multi-model creative suite for AI image generation, editing, upscaling, and design assets.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://bfl.ai/">FLUX by Black Forest Labs</a><span class="badge">Model</span></div><p>Frontier image generation models and tools from Black Forest Labs.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://firefly.adobe.com/">Adobe Firefly</a><span class="badge">Design</span></div><p>Adobe's generative creative platform, integrated across design and editing workflows.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://ideogram.ai/">Ideogram</a><span class="badge">Text</span></div><p>Image generation platform with strong support for coherent text inside generated visuals.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://leonardo.ai/">Leonardo.ai</a><span class="badge">Assets</span></div><p>Production-quality visual asset generation with fine-tuned image models.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://civitai.com/">Civitai</a><span class="badge">Models</span></div><p>Community hub for sharing Stable Diffusion models, LoRAs, and image generation resources.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a><span class="badge">Open source</span></div><p>Classic local interface for running Stable Diffusion models.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI</a><span class="badge">Open source</span></div><p>Node-based local workflow interface for Stable Diffusion and image pipelines.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://github.com/lllyasviel/Fooocus">Fooocus</a><span class="badge">Open source</span></div><p>Easy-to-use offline generator based on SDXL.</p></article>
+            </div>
+          </section>
+
+          <section id="video-generation" class="category" aria-labelledby="video-generation-title">
+            <div class="category-title">
+              <p class="label">Category 02</p>
+              <h3 id="video-generation-title">Video Generation</h3>
+              <p>AI video tools for clips, camera motion, filmmaking, avatars, image-to-video, and creative effects.</p>
+            </div>
+            <div class="tool-list">
+              <article class="tool"><div class="tool-name"><a href="https://runwayml.com/">Runway Gen-4</a><span class="badge">Video</span></div><p>Leading text-to-video platform with motion control and production workflows.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://pika.art/">Pika Art</a><span class="badge">Video</span></div><p>AI video tool for generating and animating image regions.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://openai.com/sora">Sora</a><span class="badge">Video</span></div><p>OpenAI video generation model focused on simulated motion and physical consistency.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://labs.google/fx/tools/flow">Google Flow</a><span class="badge">Film</span></div><p>Google AI filmmaking tool built around Veo video generation workflows.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://firefly.adobe.com/">Adobe Firefly Video</a><span class="badge">Video</span></div><p>Adobe's generative video and creative editing surface inside Firefly.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://higgsfield.ai/">Higgsfield</a><span class="badge">Camera</span></div><p>AI video and image platform focused on cinematic camera moves and social video workflows.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://lumalabs.ai/">Luma Dream Machine</a><span class="badge">Video</span></div><p>Fast video generation platform for high-quality motion clips.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://kling.kuaishou.com/">Kling AI</a><span class="badge">Video</span></div><p>AI video generator capable of longer video sequences.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://hailuoai.video/">Hailuo AI</a><span class="badge">Video</span></div><p>MiniMax-backed AI video generator for text-to-video and image-to-video clips.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://sceneflare.com/">Sceneflare</a><span class="badge">Creative</span></div><p>AI creative workspace for image generation, video generation, effects, and editing tools.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://voravideo.com/">Vora Video</a><span class="badge">Video</span></div><p>AI video generation platform for creative video production.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.heygen.com/">HeyGen</a><span class="badge">Avatar</span></div><p>AI video generation with realistic avatars and presenter-style workflows.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.synthesia.io/">Synthesia</a><span class="badge">Avatar</span></div><p>Create professional AI avatar videos from text.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.d-id.com/">D-ID</a><span class="badge">Avatar</span></div><p>Animate faces and create talking avatars from still images.</p></article>
+            </div>
+          </section>
+
+          <section id="audio-generation" class="category" aria-labelledby="audio-generation-title">
+            <div class="category-title">
+              <p class="label">Category 03</p>
+              <h3 id="audio-generation-title">Audio and Music Generation</h3>
+              <p>Music creation, voice generation, high-fidelity audio models, and transcription tools.</p>
+            </div>
+            <div class="tool-list">
+              <article class="tool"><div class="tool-name"><a href="https://musicgeneratorai.io/">Music Generator AI</a><span class="badge">Music</span></div><p>AI music generation tool for creating tracks from prompts.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://stableaudio.net/">Stable Audio</a><span class="badge">Audio</span></div><p>Stability AI audio generation model for music and sound generation.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://suno.com/">Suno</a><span class="badge">Music</span></div><p>Generate full songs with vocals and lyrics.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://elevenlabs.io/">ElevenLabs</a><span class="badge">Voice</span></div><p>AI voice generation platform for realistic speech synthesis.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.udio.com/">Udio</a><span class="badge">Music</span></div><p>High-fidelity music generation with complex musicality.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://openai.com/index/whisper/">OpenAI Whisper</a><span class="badge">Speech</span></div><p>Robust speech recognition and transcription model.</p></article>
+            </div>
+          </section>
+
+          <section id="3d-generation" class="category" aria-labelledby="three-d-generation-title">
+            <div class="category-title">
+              <p class="label">Category 04</p>
+              <h3 id="three-d-generation-title">3D Generation</h3>
+              <p>Tools for generating 3D models, assets, and captured scenes from text, images, or video.</p>
+            </div>
+            <div class="tool-list">
+              <article class="tool"><div class="tool-name"><a href="https://www.meshy.ai/">Meshy</a><span class="badge">3D</span></div><p>Fast 3D model generation from text or image prompts.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.tripo3d.ai/">Tripo</a><span class="badge">3D</span></div><p>Generate high-quality 3D models in seconds.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://lumalabs.ai/">Luma AI</a><span class="badge">Capture</span></div><p>Capture 3D scenes and generate 3D assets.</p></article>
+            </div>
+          </section>
+
+          <section id="llms" class="category" aria-labelledby="llms-title">
+            <div class="category-title">
+              <p class="label">Category 05</p>
+              <h3 id="llms-title">Text and LLMs</h3>
+              <p>Conversational AI, multimodal assistants, AI search, reasoning models, and model platforms.</p>
+            </div>
+            <div class="tool-list">
+              <article class="tool"><div class="tool-name"><a href="https://chat.openai.com/">ChatGPT</a><span class="badge">Assistant</span></div><p>Widely used conversational AI for writing, analysis, coding, and multimodal tasks.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.anthropic.com/">Claude</a><span class="badge">Assistant</span></div><p>AI assistant known for natural writing, analysis, and large-context workflows.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://gemini.google.com/">Gemini</a><span class="badge">Multimodal</span></div><p>Google's multimodal AI assistant and model family.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.perplexity.ai/">Perplexity</a><span class="badge">Search</span></div><p>AI-powered search engine for answer generation and source-backed research.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://mistral.ai/">Mistral</a><span class="badge">Models</span></div><p>High-performance open and commercial model platform.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.deepseek.com/">DeepSeek</a><span class="badge">Reasoning</span></div><p>Advanced coding and reasoning model platform.</p></article>
+            </div>
+          </section>
+
+          <section id="coding" class="category" aria-labelledby="coding-title">
+            <div class="category-title">
+              <p class="label">Category 06</p>
+              <h3 id="coding-title">Coding and Development</h3>
+              <p>AI programming tools, editors, cloud IDEs, and frameworks for building language model applications.</p>
+            </div>
+            <div class="tool-list">
+              <article class="tool"><div class="tool-name"><a href="https://github.com/features/copilot">GitHub Copilot</a><span class="badge">Coding</span></div><p>AI pair programmer integrated with common developer workflows.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://www.cursor.so/">Cursor</a><span class="badge">Editor</span></div><p>AI-native code editor designed for pair programming and project-wide code assistance.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://replit.com/site/ghostwriter">Replit Ghostwriter</a><span class="badge">IDE</span></div><p>AI coding assistant integrated into the Replit development environment.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://langchain.com/">LangChain</a><span class="badge">Framework</span></div><p>Framework for developing applications powered by language models.</p></article>
+            </div>
+          </section>
+
+          <section id="utilities" class="category" aria-labelledby="utilities-title">
+            <div class="category-title">
+              <p class="label">Category 07</p>
+              <h3 id="utilities-title">Utilities and Plugins</h3>
+              <p>Supporting tools for upscaling, enhancement, image control, and production workflows.</p>
+            </div>
+            <div class="tool-list">
+              <article class="tool"><div class="tool-name"><a href="https://github.com/upscayl/upscayl">Upscayl</a><span class="badge">Upscale</span></div><p>Free and open-source AI image upscaler.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://magnific.ai/">Magnific AI</a><span class="badge">Enhance</span></div><p>High-end image upscaler and detail enhancer.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://github.com/lllyasviel/ControlNet">ControlNet</a><span class="badge">Control</span></div><p>Neural network structure for controlling diffusion model generation.</p></article>
+            </div>
+          </section>
+
+          <section id="learning" class="category" aria-labelledby="learning-title">
+            <div class="category-title">
+              <p class="label">Category 08</p>
+              <h3 id="learning-title">Learning Resources</h3>
+              <p>Practical references for prompt engineering, API usage, and communicating with AI systems.</p>
+            </div>
+            <div class="tool-list">
+              <article class="tool"><div class="tool-name"><a href="https://www.promptingguide.ai/">Prompt Engineering Guide</a><span class="badge">Guide</span></div><p>Comprehensive guide to prompt engineering methods and examples.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://github.com/openai/openai-cookbook">OpenAI Cookbook</a><span class="badge">Code</span></div><p>Examples and guides for building with the OpenAI API.</p></article>
+              <article class="tool"><div class="tool-name"><a href="https://learnprompting.org/">Learn Prompting</a><span class="badge">Course</span></div><p>Free, open-source course on communicating effectively with AI.</p></article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="maintenance" class="section" aria-labelledby="maintenance-title">
+        <div class="section-heading">
+          <div>
+            <p class="label">Maintained repository</p>
+            <h2 id="maintenance-title">How this directory stays useful</h2>
+          </div>
+          <p>The GitHub repository remains the source of truth. The public page makes the same directory easier to browse, cite, and index.</p>
+        </div>
+        <div class="maintenance">
+          <article class="note">
+            <h3>Official links first</h3>
+            <p>Entries point to official websites or primary repositories instead of secondary listings.</p>
           </article>
-          <article class="tool">
-            <h3><a href="https://www.krea.ai/">Krea</a></h3>
-            <p>Creative AI suite for image generation, enhancement, video, and 3D workflows.</p>
+          <article class="note">
+            <h3>Short descriptions</h3>
+            <p>Each tool is described by practical workflow value, not marketing claims.</p>
+          </article>
+          <article class="note">
+            <h3>Open contributions</h3>
+            <p>New tools can be proposed through GitHub pull requests and reviewed before inclusion.</p>
           </article>
         </div>
       </section>
 
       <footer>
-        <span>Maintained by GenAIStack.</span>
+        <span>Maintained by GenAIStack. Last updated May 30, 2026.</span>
         <a href="https://github.com/GenAIStack/awesome-genai-tools">Contribute on GitHub</a>
       </footer>
     </main>
