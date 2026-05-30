@@ -36,14 +36,14 @@ Web version: [Awesome Generative AI Tools](https://genaistack.github.io/awesome-
 ## ✨ Featured / Editor's Choice
 *Tools that offer multi-model capabilities or unique workflows.*
 
-### [Nano Banana Pro](https://nanobanana-pro.co/) 🚀
-> **Category:** Image & Design Platform
-> **Engine:** Gemini 3 Pro + Flux1 + GPT-4o
+### [Image V2](https://imagev2.org/) 🚀
+> **Category:** AI Image Generation & Editing Platform
+> **Workflow:** Browser-based image generation, editing, and multi-model creative tools
 
-A unified web platform that integrates multiple top-tier models. Unlike standard generators, it features a **Physics-Aware engine** for realistic lighting/gravity and supports conversational editing ("Edit with Gemini").
-* **Best for:** Professional designers requiring high consistency and text rendering.
-* **Key Feature:** Native 2K resolution with 4K upscaling.
-* [Try Nano Banana Pro AI](https://nanobanana-pro.co/)
+Image V2 is a practical web platform for AI image generation and editing, designed for users who want direct browser workflows instead of local setup.
+* **Best for:** Generating and editing marketing visuals, creative assets, and image variations.
+* **Key Feature:** Multiple image generation workflows in one browser-based tool.
+* [Try Image V2](https://imagev2.org/)
 
 ---
 
@@ -52,7 +52,6 @@ A unified web platform that integrates multiple top-tier models. Unlike standard
 ### Proprietary / Web-Based
 * **[Midjourney](https://www.midjourney.com/)** - The industry standard for artistic style and texture. Runs on Discord.
 * **[DALL·E 3](https://openai.com/dall-e-3)** - OpenAI's model, excellent at following complex prompt instructions.
-* **[Nano Banana Pro](https://nanobanana-pro.co/)** - (See Featured) Best for physics-accurate generation and localized text.
 * **[Image V2](https://imagev2.org/)** - Browser-based AI image generation and editing platform with multiple model workflows.
 * **[Krea](https://www.krea.ai/)** - Creative AI suite for image generation, enhancement, video, and 3D workflows.
 * **[Recraft](https://www.recraft.ai/)** - AI design tool for brand assets, illustrations, vector-style graphics, and image editing.
