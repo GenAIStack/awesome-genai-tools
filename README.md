@@ -59,6 +59,7 @@ Image V2 is a practical web platform for AI image generation and editing, design
 * **[FLUX by Black Forest Labs](https://bfl.ai/)** - Frontier image generation models and tools from Black Forest Labs.
 * **[Adobe Firefly](https://firefly.adobe.com/)** - Safe for commercial use, integrated into Photoshop.
 * **[Ideogram](https://ideogram.ai/)** - Specialized in generating coherent text within images.
+* **[Seedream AI Studio](https://seedream4.video/)** - Multi-model AI image generation by ByteDance (Seedream 5.0/4.5/4.0), ranked #1 in AI Image Arena. Supports up to 10 reference images and one-click Kling 2.1 video generation. Free tier available.
 * **[Leonardo.ai](https://leonardo.ai/)** - Production-quality visual assets with fine-tuned models.
 * **[Civitai](https://civitai.com/)** - The largest community for sharing Stable Diffusion models and LoRAs.
 
