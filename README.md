@@ -80,6 +80,7 @@ Image V2 is a practical web platform for AI image generation and editing, design
 * **[Luma Dream Machine](https://lumalabs.ai/)** - High-quality, fast video generation.
 * **[Kling AI](https://kling.kuaishou.com/)** - Capable of generating longer video sequences (up to 2 mins).
 * **[Hailuo AI](https://hailuoai.video/)** - MiniMax-backed AI video generator for text-to-video and image-to-video clips.
+* **[ImagineClip](https://imagineclip.com/ai-image-to-video)** - Browser-based AI video workflow for prompts, images, and creative effects.
 * **[Sceneflare](https://sceneflare.com/)** - AI creative workspace for image generation, video generation, effects, and editing tools.
 * **[Vora Video](https://voravideo.com/)** - AI video generation platform.
 * **[HeyGen](https://www.heygen.com/)** - AI video generation with realistic avatars.
