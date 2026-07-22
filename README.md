@@ -124,6 +124,7 @@ Image V2 is a practical web platform for AI image generation and editing, design
 * **[Cursor](https://www.cursor.so/)** - An AI-native code editor designed for pair-programming.
 * **[Replit Ghostwriter](https://replit.com/site/ghostwriter)** - AI coding assistant integrated into the Replit IDE.
 * **[LangChain](https://langchain.com/)** - Framework for developing applications powered by language models.
+* **[RunAPI MCP](https://github.com/runapi-ai/mcp)** - MCP server for running image, video, music/audio, and model API jobs through RunAPI.
 
 ---
 
