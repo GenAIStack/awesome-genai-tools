@@ -85,6 +85,7 @@ Image V2 is a practical web platform for AI image generation and editing, design
 * **[HeyGen](https://www.heygen.com/)** - AI video generation with realistic avatars.
 * **[Synthesia](https://www.synthesia.io/)** - Create professional AI avatar videos from text.
 * **[D-ID](https://www.d-id.com/)** - Animate faces and create talking avatars from images.
+* **[OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio)** - Open-source TypeScript CLI, MCP server, and agent skills for plan-based video composition, generation, editing, and rendering.
 
 ---
 
