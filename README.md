@@ -53,6 +53,7 @@ Image V2 is a practical web platform for AI image generation and editing, design
 * **[Midjourney](https://www.midjourney.com/)** - The industry standard for artistic style and texture. Runs on Discord.
 * **[DALL·E 3](https://openai.com/dall-e-3)** - OpenAI's model, excellent at following complex prompt instructions.
 * **[Image V2](https://imagev2.org/)** - Browser-based AI image generation and editing platform with multiple model workflows.
+* **[Nano Banana / ImageCraft Pro](https://nanobanana.live/)** - Browser-based AI image editor using Nano Banana technology for text-to-image and image-to-image workflows with reference images.
 * **[Krea](https://www.krea.ai/)** - Creative AI suite for image generation, enhancement, video, and 3D workflows.
 * **[Recraft](https://www.recraft.ai/)** - AI design tool for brand assets, illustrations, vector-style graphics, and image editing.
 * **[Freepik AI Suite](https://www.freepik.com/ai)** - Multi-model creative suite for AI image generation, editing, upscaling, and design assets.
