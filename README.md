@@ -115,6 +115,7 @@ Image V2 is a practical web platform for AI image generation and editing, design
 * **[Perplexity](https://www.perplexity.ai/)** - AI-powered search engine.
 * **[Mistral](https://mistral.ai/)** - High-performance open-source models.
 * **[DeepSeek](https://www.deepseek.com/)** - Advanced coding and reasoning models.
+* **[Orkas](https://orkas.ai/?source=gh_genstack)** - Open-source, local-first desktop AI workforce coordinated by a Commander through one chat.
 
 ---
 
