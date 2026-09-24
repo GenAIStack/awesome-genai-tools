@@ -131,6 +131,7 @@ Image V2 is a practical web platform for AI image generation and editing, design
 
 * **[Upscayl](https://github.com/upscayl/upscayl)** - Free and open source AI image upscaler.
 * **[Magnific AI](https://magnific.ai/)** - High-end upscaler and detail enhancer (Paid).
+* **[PhotoOmni](https://photoomni.com/en)** - Passport and visa photo preparation with country-specific checks for dimensions, background, face positioning, and image quality, plus optional expert review.
 * **[ControlNet](https://github.com/lllyasviel/ControlNet)** - Neural network structure to control diffusion models.
 
 ---
