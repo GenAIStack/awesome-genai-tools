@@ -89,7 +89,7 @@ Image V2 is a practical web platform for AI image generation and editing, design
 ---
 
 ## 🎵 Audio & Music Generation
-
+- [usesuno](https://usesuno.online) - Free toolkit for Suno AI: multi-layer prompt builder, style tag cleaner, and track/lyrics downloader.
 * **[Music Generator AI](https://musicgeneratorai.io/)** - AI music generation tool.
 * **[Stable Audio](https://stableaudio.net/)** - Stability AI's audio generation model.
 * **[Suno](https://suno.com/)** - Create full songs with vocals and lyrics.
