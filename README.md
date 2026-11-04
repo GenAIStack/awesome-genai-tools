@@ -71,6 +71,7 @@ Image V2 is a practical web platform for AI image generation and editing, design
 
 ## 🎥 Video Generation
 
+* **[Shimio - AI Dance Generator](https://shimio.net/)** - Create a dancing clip from a character photo and a dance-reference video; select the movement passage, preview the inputs, then generate and download the result.
 * **[Runway Gen-4](https://runwayml.com/)** - Leading text-to-video platform with granular motion control and production workflows.
 * **[Pika Art](https://pika.art/)** - Great for animating specific regions of an image.
 * **[Sora](https://openai.com/sora)** - OpenAI's physics-simulating video model (Waitlist).
